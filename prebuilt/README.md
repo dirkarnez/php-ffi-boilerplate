@@ -1,6 +1,10 @@
 Prebuilt
 ========
 ### [ffi](ffi.so) (tested on php 8)
+How to build
+- No need, just copy from `docker run -it --rm -p 81:80 -v "%cd%:/home" rechtlogisch/php-with-ffi:8.0-cli`
+
+References
 - [PHP: FFI - Manual](https://www.php.net/manual/en/class.ffi.php)
 - [PHP FFI详解 - 一种全新的PHP扩展方式 - 风雪之隅](https://www.laruence.com/2020/03/11/5475.html)
 - [gabrielrcouto/awesome-php-ffi: PHP FFI examples and use cases](https://github.com/gabrielrcouto/awesome-php-ffi)
