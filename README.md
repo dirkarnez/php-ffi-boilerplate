@@ -10,3 +10,4 @@ To dynamically call foreign functions in php
     extension=ffi.so
     ```
 3. Restart / reload php-fpm process
+4. Refer to [/prebuilt/README.md](/prebuilt/README.md)
