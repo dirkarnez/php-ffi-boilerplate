@@ -25,3 +25,20 @@ How to use
     echo $ffiCalculator->Calculator_Add(9, 8);
   ?>
   ```
+  ```php
+  $ffi = FFI::cdef(
+  "double cos(double x);", // this is a regular C declaration
+        "libm.so.6");
+
+    // call C's printf()
+    echo $ffi->cos(60.0 * 3.14159265 / 180.0);
+
+    echo "<br>";
+
+  $ffiCalculator = FFI::cdef(
+  "int Calculator_Add(int n1, int n2);", // this is a regular C declaration
+        dirname(__FILE__) . "/../modules/libcalculator_library.so");
+
+    // call C's printf()
+    echo "1 + 1 = " . $ffiCalculator->Calculator_Add(1, 1);
+  ```
