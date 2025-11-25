@@ -11,3 +11,6 @@ To dynamically call foreign functions in php
     ```
 3. Restart / reload php-fpm process
 4. Refer to [/prebuilt/README.md](/prebuilt/README.md)
+
+### Shared Library on Linux
+- [Shared libraries with GCC on Linux - Cprogramming.com](https://www.cprogramming.com/tutorial/shared-libraries-linux-gcc.html)
